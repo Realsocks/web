@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="startbootstrap-modern-business-1.0.5/css/bootstrap.css">
+<script src="startbootstrap-modern-business-1.0.5/js/bootstrap.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>Workers</title>
+</head>
+<body>
+<a href="index"> Вернуться на главную страницу </a><br>
+<a href="change"> Изменить работника</a><br>
+<a href="index"> Добавить нового работника</a><br>
+<a href="delete">Удалить работника</a><br>
+<!--<table class="sortable">
+  <tr>
+    <th>ID</th>
+    <th>Имя работника</th>
+    <th>Фамилия работника</th>
+    <th>Отчество работника</th>
+    <th>Дата рождения работника</th>
+    <th>Должность работника</th>
+    <th>Пол работника</th>
+    <th>Номер телефона работника</th>
+    <th>Действия</th>
+  </tr>
+  <tr th:each="Employee:${Employee}">
+    <td th:text="${Employee.id}"></td>
+    <td th:text="${Employee.name}"> </td>
+    <td th:text="${Employee.secondname}"></td>
+    <td th:text="${Employee.lastname}"></td>
+    <td th:text="${Employee.sex}"></td>
+    <td th:text="${Employee.dateofbirth}"></td>
+    <td th:text="${Employee.Work}"></td>
+    <td th:text="${Employee.number}"></td>
+    <form action="/del" method="post">
+      <td th:button="${Employee}"><button type="submit" >Удалить</button></td>
+    </form>
+
+    <td th:button="${Employee}"><button type="submit" >Изменить</button></td>-->
+
+<table class="table table-hover">
+    <thead>
+    <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Имя работника</th>
+        <th scope="col">Фамилия работника</th>
+        <th scope="col">Отчество работника</th>
+        <th scope="col">Дата рождения работника</th>
+        <th scope="col">Должность работника</th>
+        <th scope="col">Пол работника</th>
+        <th scope="col">Номер телефона работника</th>
+        <th scope="col">Действия</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="Employee:${Employee}">
+        <td th:text="${Employee.id}"></td>
+        <td th:text="${Employee.name}"> </td>
+        <td th:text="${Employee.secondname}"></td>
+        <td th:text="${Employee.lastname}"></td>
+        <td th:text="${Employee.sex}"></td>
+        <td th:text="${Employee.dateofbirth}"></td>
+        <td th:text="${Employee.Work}"></td>
+        <td th:text="${Employee.number}"></td>
+        <form action="/del" method="post">
+            <td th:button="${Employee}"><button type="submit" >Удалить</button></td>
+        </form>
+
+        <td th:button="${Employee}"><button type="submit" >Изменить</button></td>
+    </tr>
+    </tbody>
+</table>
+
+
+
+
+
+
+</tr>
+
+</table>
+
+</body>
+</html>
